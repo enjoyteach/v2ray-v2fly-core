@@ -1,7 +1,7 @@
 # v2ray-v2fly-core
-##v2ray服务端搭建
+## v2ray服务端搭建
 
-###docker安装
+### docker安装
 1. 编排文件
 
 ```

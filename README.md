@@ -1,4 +1,4 @@
-# v2ray-v2fly-core
+# v2ray&v2fly-core
 ## v2ray服务端搭建
 
 ### docker安装

@@ -1,7 +1,10 @@
 # v2ray&v2fly-core
 ## v2ray服务端搭建
 
-### docker安装
+官方网站：https://www.v2fly.org/  不翻墙看不到
+官方github：https://github.com/v2fly/v2ray-core
+
+### docker安装  【别告诉 我你不会docker】
 1. 编排文件
 
 ```
@@ -73,14 +76,31 @@ services: #docker-conpose2版本以上需要该设置services
 
 ## v2ray客户端推荐
 
-1. Qv2ray  github链接
+1. Qv2ray  官方github：https://github.com/Qv2ray/Qv2ray
 
 跨平台 V2Ray 客户端，支持 Linux、Windows、macOS，可通过插件系统支持 SSR / Trojan / Trojan-Go / NaiveProxy 等协议
 
-2. SagerNet  github链接
+2. SagerNet  官方github：https://github.com/SagerNet/SagerNet
 
 SagerNet 是一个基于 V2Ray 的 Android 通用代理应用。
 
-3. V2rayN  github链接
+3. V2rayN  官方github：https://github.com/2dust/v2rayN
 
 V2RayN 是一个基于 V2Ray 内核的 Windows 客户端。
+
+
+## 其他安装方式
+
+1. Linuxbrew 包管理器安装（mac也能用，不过应该没人拿mac当服务器飞翔吧。。。）
+Linuxbrew 包管理器的使用方式与 Homebrew 一致：brew install v2ray
+
+2. 官方一键安装（不信自己去看：https://github.com/v2fly/fhs-install-v2ray）
+   
+安装：
+# bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+
+卸载：
+# bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --remove
+
+3. 源码安装 （算了 前面都不会 这个更白瞎）
+   

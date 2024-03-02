@@ -20,16 +20,67 @@ services: #docker-conpose2版本以上需要该设置services
 ```
 
 
-##v2ray客户端推荐
+2. 服务器配置文件
 
-Qv2ray  github链接
+```
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "block"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 8888,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "此处是要设置的UUID，可以在线工具或者使用V2RAY客户端生成",
+            "alterId": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
+    }
+  ]
+}
+```
+
+
+## v2ray客户端推荐
+
+1. Qv2ray  github链接
 
 跨平台 V2Ray 客户端，支持 Linux、Windows、macOS，可通过插件系统支持 SSR / Trojan / Trojan-Go / NaiveProxy 等协议
 
-SagerNet  github链接
+2. SagerNet  github链接
 
 SagerNet 是一个基于 V2Ray 的 Android 通用代理应用。
 
-V2rayN  github链接
+3. V2rayN  github链接
 
 V2RayN 是一个基于 V2Ray 内核的 Windows 客户端。

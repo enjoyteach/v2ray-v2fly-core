@@ -16,8 +16,8 @@ services: #docker-conpose2版本以上需要该设置services
     volumes:
       - /etc/v2ray/config.json:/etc/v2ray/config.json #配置文件位置   服务器的v2ray配置/docker容器系统中的位置
 
-    command:  run -c /etc/v2ray/config.json
-```
+    command:  run -c /etc/v2ray/config.json  #注意  v5和低版本的命令不同此处基于V5版本
+``` 
 
 
 2. 服务器配置文件

@@ -97,10 +97,10 @@ Linuxbrew 包管理器的使用方式与 Homebrew 一致：brew install v2ray
 2. 官方一键安装（不信自己去看：https://github.com/v2fly/fhs-install-v2ray）
    
 安装：
-# bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+`# bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)`
 
 卸载：
-# bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --remove
+`# bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --remove`
 
 3. 源码安装 （算了 前面都不会 这个更白瞎）
    

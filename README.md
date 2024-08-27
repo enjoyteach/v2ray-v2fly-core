@@ -106,7 +106,7 @@ Linuxbrew 包管理器的使用方式与 Homebrew 一致：brew install v2ray
 
 
 ## shadowsocket编排文件
-
+```
 version: '3'
 services:
   shadowsocks:
@@ -123,3 +123,4 @@ services:
       - "8388:8388"
     restart: always
    
+```

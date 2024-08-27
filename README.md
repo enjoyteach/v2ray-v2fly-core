@@ -103,4 +103,23 @@ Linuxbrew 包管理器的使用方式与 Homebrew 一致：brew install v2ray
 `# bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --remove`
 
 3. 源码安装 （算了 前面都不会 这个更白瞎）
+
+
+## shadowsocket编排文件
+
+version: '3'
+services:
+  shadowsocks:
+    image: shadowsocks/shadowsocks-libev
+    environment:
+      - PASSWORD=123456
+      - SERVER_PORT=8388
+      - TIMEOUT=300
+      - SERVER_ADDR=0.0.0.0
+      - DNS_ADDRS=8.8.8.8,8.8.4.4
+      - TZ=Asia/Shanghai
+      - METHOD=chacha20-ietf-poly1305
+    ports:
+      - "8388:8388"
+    restart: always
    
